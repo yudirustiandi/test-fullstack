@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Auth
+Route::get('/manage/auth/login', 'Manage\AuthController@login')->name('login');
+Route::post('/manage/auth/login', 'Manage\AuthController@doLogin');
+Route::get('/manage/auth/logout', 'Manage\AuthController@logout');
+Route::post('/manage/auth/logout', 'Manage\AuthController@logout');
+
 // Dashboard
 Route::get('/manage/dashboard', 'Manage\DashboardController@index');
 
