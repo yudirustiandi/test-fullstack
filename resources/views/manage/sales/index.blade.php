@@ -14,21 +14,18 @@
         <thead>
             <tr>
                 <th>Nama Mobil</th>
-                <th>Harga</th>
-                <th>Stock</th>
-                <th>Aksi</th>
+                <th>Email</th>
+                <th>No. Telepon</th>
+                <th>Mobil</th>
             </tr>
         </thead>
         <tbody>
             @foreach ($sales as $sale)
             <tr>
                 <td>{{ $sale->name }}</td>
-                <td>{{ $sale->price }}</td>
+                <td>{{ $sale->email }}</td>
+                <td>{{ $sale->phone }}</td>
                 <td>{{ $sale->stock }}</td>
-                <td>
-                    <a href="{{ url('manage/sale/edit/'.$sale->id) }}" class="btn btn-warning">Edit</a>
-                    <a href="{{ url('manage/sale/delete/'.$sale->id) }}" class="btn btn-danger">Hapus</a>
-                </td>
             </tr>
             @endforeach
         </tbody>
