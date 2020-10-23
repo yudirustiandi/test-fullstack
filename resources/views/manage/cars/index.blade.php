@@ -23,7 +23,7 @@
             @foreach ($cars as $car)
             <tr>
                 <td>{{ $car->name }}</td>
-                <td>{{ $car->price }}</td>
+                <td>Rp. {{ rupiahSeparator($car->price) }}</td>
                 <td>{{ $car->stock }}</td>
                 <td>
                     <a href="{{ url('manage/car/edit/'.$car->id) }}" class="btn btn-warning">Edit</a>

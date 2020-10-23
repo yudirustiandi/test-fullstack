@@ -35,3 +35,5 @@ Route::get('/manage/car/delete/{id}', 'Manage\CarController@delete');
 
 // Sales
 Route::get('/manage/sale', 'Manage\SaleController@index');
+Route::get('/manage/sale/add', 'Manage\SaleController@store');
+Route::post('/manage/sale/add', 'Manage\SaleController@store');
