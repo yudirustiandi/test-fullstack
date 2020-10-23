@@ -25,7 +25,7 @@
                 <td>{{ $sale->name }}</td>
                 <td>{{ $sale->email }}</td>
                 <td>{{ $sale->phone }}</td>
-                <td>{{ $sale->stock }}</td>
+                <td>{{ $sale->car->name }}</td>
             </tr>
             @endforeach
         </tbody>
