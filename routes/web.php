@@ -30,7 +30,7 @@ Route::get('/manage/car/add', 'Manage\CarController@store');
 Route::post('/manage/car/add', 'Manage\CarController@store');
 Route::get('/manage/car/edit/{id}', 'Manage\CarController@store');
 Route::post('/manage/car/edit/{id}', 'Manage\CarController@store');
-Route::post('/manage/car/delete/{id}', 'Manage\CarController@delete');
+Route::get('/manage/car/delete/{id}', 'Manage\CarController@delete');
 
 
 // Sales
